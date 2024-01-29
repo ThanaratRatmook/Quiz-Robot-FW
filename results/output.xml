@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-29T14:56:52.506310" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot" source="c:\Users\Thana\OneDrive\Desktop\Robot">
+<suite id="s1-s1" name="Test2" source="c:\Users\Thana\OneDrive\Desktop\Robot\test2.robot">
+<test id="s1-s1-t1" name="Product Button Test" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:56:52.747574" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>https://automationexercise.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:56:52.746575" elapsed="7.963017"/>
+</kw>
+<kw name="Click on 'Signup / Login' Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:57:00.711611" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:57:00.710607" elapsed="0.932043"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:57:00.710607" elapsed="0.932043"/>
+</kw>
+<kw name="Input Email Address">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-01-29T14:57:01.643660" elapsed="0.026516"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:57:01.671181" level="INFO">Typing text 'sacrfet1212@gmail.com' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[2]'.</msg>
+<arg>${locator}</arg>
+<arg>${email_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:57:01.670176" elapsed="0.123618"/>
+</kw>
+<arg>${email_address}</arg>
+<status status="PASS" start="2024-01-29T14:57:01.643660" elapsed="0.150134"/>
+</kw>
+<kw name="Input Password">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-01-29T14:57:01.794792" elapsed="0.020252"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:57:01.816052" level="INFO">Typing text '0849489014' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[3]'.</msg>
+<arg>${locator}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:57:01.815044" elapsed="0.132364"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-01-29T14:57:01.793794" elapsed="0.153614"/>
+</kw>
+<kw name="Submit Credentials">
+<kw name="Submit Form" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:57:01.949443" level="INFO">Submitting form '//*[@id="form"]/div/div/div[1]/div/form'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:57:01.948438" elapsed="6.421119"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:57:01.948438" elapsed="6.421119"/>
+</kw>
+<kw name="Click on 'product' button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:57:08.371566" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:57:08.370562" elapsed="6.868222"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:57:08.370562" elapsed="6.868222"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:56:52.745574" elapsed="22.493210"/>
+</test>
+<doc>นี่คือตัวอย่างของชุดทดสอบโดยใช้ Robot Framework</doc>
+<status status="PASS" start="2024-01-29T14:56:52.534000" elapsed="22.706873"/>
+</suite>
+<status status="PASS" start="2024-01-29T14:56:52.510324" elapsed="22.732567"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot">Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test2">Robot.Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
